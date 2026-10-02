@@ -1,0 +1,847 @@
+{
+  "obras": [
+    {
+      "id": "obra-1",
+      "nome": "Residencial Vista Alegre",
+      "endereco": "Rua das Palmeiras, 450 - Botucatu/SP",
+      "ativa": true
+    },
+    {
+      "id": "obra-2",
+      "nome": "Galpão Industrial Santa Fé",
+      "endereco": "Av. Industrial, 1200 - Botucatu/SP",
+      "ativa": true
+    }
+  ],
+  "ajudantes": [
+    {
+      "id": "aju-1",
+      "nome": "João da Silva",
+      "telefone": "(14) 99988-7766",
+      "valorDiaria": 140,
+      "obraId": "obra-1"
+    },
+    {
+      "id": "aju-2",
+      "nome": "Pedro Henrique Souza",
+      "telefone": "(14) 99877-6655",
+      "valorDiaria": 150,
+      "obraId": "obra-1"
+    },
+    {
+      "id": "aju-3",
+      "nome": "Marcos Antônio Lima",
+      "telefone": "(14) 99766-5544",
+      "valorDiaria": 130,
+      "obraId": "obra-1"
+    },
+    {
+      "id": "aju-4",
+      "nome": "Antônio Carlos Ferreira",
+      "telefone": "(14) 99655-4433",
+      "valorDiaria": 160,
+      "obraId": "obra-2"
+    },
+    {
+      "id": "aju-5",
+      "nome": "José Roberto Santos",
+      "telefone": "(14) 99544-3322",
+      "valorDiaria": 145,
+      "obraId": "obra-2"
+    },
+    {
+      "id": "aju-6",
+      "nome": "Francisco das Chagas Oliveira",
+      "telefone": "(14) 99433-2211",
+      "valorDiaria": 135,
+      "obraId": "obra-2"
+    }
+  ],
+  "marcacoes": [
+    {
+      "id": "marc-1",
+      "ajudanteId": "aju-1",
+      "data": "2026-09-01",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-2",
+      "ajudanteId": "aju-1",
+      "data": "2026-09-02",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-3",
+      "ajudanteId": "aju-1",
+      "data": "2026-09-03",
+      "tipo": "meia"
+    },
+    {
+      "id": "marc-4",
+      "ajudanteId": "aju-1",
+      "data": "2026-09-04",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-5",
+      "ajudanteId": "aju-1",
+      "data": "2026-09-05",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-6",
+      "ajudanteId": "aju-1",
+      "data": "2026-09-06",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-7",
+      "ajudanteId": "aju-1",
+      "data": "2026-09-07",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-8",
+      "ajudanteId": "aju-1",
+      "data": "2026-09-08",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-9",
+      "ajudanteId": "aju-1",
+      "data": "2026-09-09",
+      "tipo": "meia"
+    },
+    {
+      "id": "marc-10",
+      "ajudanteId": "aju-1",
+      "data": "2026-09-10",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-11",
+      "ajudanteId": "aju-1",
+      "data": "2026-09-11",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-12",
+      "ajudanteId": "aju-1",
+      "data": "2026-09-12",
+      "tipo": "falta"
+    },
+    {
+      "id": "marc-13",
+      "ajudanteId": "aju-1",
+      "data": "2026-09-13",
+      "tipo": "meia"
+    },
+    {
+      "id": "marc-14",
+      "ajudanteId": "aju-1",
+      "data": "2026-09-14",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-15",
+      "ajudanteId": "aju-1",
+      "data": "2026-09-15",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-16",
+      "ajudanteId": "aju-1",
+      "data": "2026-09-16",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-17",
+      "ajudanteId": "aju-1",
+      "data": "2026-09-17",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-18",
+      "ajudanteId": "aju-1",
+      "data": "2026-09-18",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-19",
+      "ajudanteId": "aju-1",
+      "data": "2026-09-19",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-20",
+      "ajudanteId": "aju-1",
+      "data": "2026-09-20",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-21",
+      "ajudanteId": "aju-2",
+      "data": "2026-09-01",
+      "tipo": "meia"
+    },
+    {
+      "id": "marc-22",
+      "ajudanteId": "aju-2",
+      "data": "2026-09-02",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-23",
+      "ajudanteId": "aju-2",
+      "data": "2026-09-03",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-24",
+      "ajudanteId": "aju-2",
+      "data": "2026-09-04",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-25",
+      "ajudanteId": "aju-2",
+      "data": "2026-09-05",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-26",
+      "ajudanteId": "aju-2",
+      "data": "2026-09-06",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-27",
+      "ajudanteId": "aju-2",
+      "data": "2026-09-07",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-28",
+      "ajudanteId": "aju-2",
+      "data": "2026-09-08",
+      "tipo": "meia"
+    },
+    {
+      "id": "marc-29",
+      "ajudanteId": "aju-2",
+      "data": "2026-09-09",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-30",
+      "ajudanteId": "aju-2",
+      "data": "2026-09-10",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-31",
+      "ajudanteId": "aju-2",
+      "data": "2026-09-11",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-32",
+      "ajudanteId": "aju-2",
+      "data": "2026-09-12",
+      "tipo": "meia"
+    },
+    {
+      "id": "marc-33",
+      "ajudanteId": "aju-2",
+      "data": "2026-09-13",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-34",
+      "ajudanteId": "aju-2",
+      "data": "2026-09-14",
+      "tipo": "meia"
+    },
+    {
+      "id": "marc-35",
+      "ajudanteId": "aju-2",
+      "data": "2026-09-15",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-36",
+      "ajudanteId": "aju-2",
+      "data": "2026-09-16",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-37",
+      "ajudanteId": "aju-2",
+      "data": "2026-09-17",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-38",
+      "ajudanteId": "aju-2",
+      "data": "2026-09-18",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-39",
+      "ajudanteId": "aju-2",
+      "data": "2026-09-19",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-40",
+      "ajudanteId": "aju-2",
+      "data": "2026-09-20",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-41",
+      "ajudanteId": "aju-3",
+      "data": "2026-09-01",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-42",
+      "ajudanteId": "aju-3",
+      "data": "2026-09-02",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-43",
+      "ajudanteId": "aju-3",
+      "data": "2026-09-03",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-44",
+      "ajudanteId": "aju-3",
+      "data": "2026-09-04",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-45",
+      "ajudanteId": "aju-3",
+      "data": "2026-09-05",
+      "tipo": "meia"
+    },
+    {
+      "id": "marc-46",
+      "ajudanteId": "aju-3",
+      "data": "2026-09-06",
+      "tipo": "meia"
+    },
+    {
+      "id": "marc-47",
+      "ajudanteId": "aju-3",
+      "data": "2026-09-07",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-48",
+      "ajudanteId": "aju-3",
+      "data": "2026-09-08",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-49",
+      "ajudanteId": "aju-3",
+      "data": "2026-09-09",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-50",
+      "ajudanteId": "aju-3",
+      "data": "2026-09-10",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-51",
+      "ajudanteId": "aju-3",
+      "data": "2026-09-11",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-52",
+      "ajudanteId": "aju-3",
+      "data": "2026-09-12",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-53",
+      "ajudanteId": "aju-3",
+      "data": "2026-09-13",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-54",
+      "ajudanteId": "aju-3",
+      "data": "2026-09-14",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-55",
+      "ajudanteId": "aju-3",
+      "data": "2026-09-15",
+      "tipo": "falta"
+    },
+    {
+      "id": "marc-56",
+      "ajudanteId": "aju-3",
+      "data": "2026-09-16",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-57",
+      "ajudanteId": "aju-3",
+      "data": "2026-09-17",
+      "tipo": "falta"
+    },
+    {
+      "id": "marc-58",
+      "ajudanteId": "aju-3",
+      "data": "2026-09-18",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-59",
+      "ajudanteId": "aju-3",
+      "data": "2026-09-19",
+      "tipo": "falta"
+    },
+    {
+      "id": "marc-60",
+      "ajudanteId": "aju-3",
+      "data": "2026-09-20",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-61",
+      "ajudanteId": "aju-4",
+      "data": "2026-09-01",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-62",
+      "ajudanteId": "aju-4",
+      "data": "2026-09-02",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-63",
+      "ajudanteId": "aju-4",
+      "data": "2026-09-03",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-64",
+      "ajudanteId": "aju-4",
+      "data": "2026-09-04",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-65",
+      "ajudanteId": "aju-4",
+      "data": "2026-09-05",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-66",
+      "ajudanteId": "aju-4",
+      "data": "2026-09-06",
+      "tipo": "falta"
+    },
+    {
+      "id": "marc-67",
+      "ajudanteId": "aju-4",
+      "data": "2026-09-07",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-68",
+      "ajudanteId": "aju-4",
+      "data": "2026-09-08",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-69",
+      "ajudanteId": "aju-4",
+      "data": "2026-09-09",
+      "tipo": "falta"
+    },
+    {
+      "id": "marc-70",
+      "ajudanteId": "aju-4",
+      "data": "2026-09-10",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-71",
+      "ajudanteId": "aju-4",
+      "data": "2026-09-11",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-72",
+      "ajudanteId": "aju-4",
+      "data": "2026-09-12",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-73",
+      "ajudanteId": "aju-4",
+      "data": "2026-09-13",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-74",
+      "ajudanteId": "aju-4",
+      "data": "2026-09-14",
+      "tipo": "meia"
+    },
+    {
+      "id": "marc-75",
+      "ajudanteId": "aju-4",
+      "data": "2026-09-15",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-76",
+      "ajudanteId": "aju-4",
+      "data": "2026-09-16",
+      "tipo": "falta"
+    },
+    {
+      "id": "marc-77",
+      "ajudanteId": "aju-4",
+      "data": "2026-09-17",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-78",
+      "ajudanteId": "aju-4",
+      "data": "2026-09-18",
+      "tipo": "falta"
+    },
+    {
+      "id": "marc-79",
+      "ajudanteId": "aju-4",
+      "data": "2026-09-19",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-80",
+      "ajudanteId": "aju-4",
+      "data": "2026-09-20",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-81",
+      "ajudanteId": "aju-5",
+      "data": "2026-09-01",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-82",
+      "ajudanteId": "aju-5",
+      "data": "2026-09-02",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-83",
+      "ajudanteId": "aju-5",
+      "data": "2026-09-03",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-84",
+      "ajudanteId": "aju-5",
+      "data": "2026-09-04",
+      "tipo": "meia"
+    },
+    {
+      "id": "marc-85",
+      "ajudanteId": "aju-5",
+      "data": "2026-09-05",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-86",
+      "ajudanteId": "aju-5",
+      "data": "2026-09-06",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-87",
+      "ajudanteId": "aju-5",
+      "data": "2026-09-07",
+      "tipo": "meia"
+    },
+    {
+      "id": "marc-88",
+      "ajudanteId": "aju-5",
+      "data": "2026-09-08",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-89",
+      "ajudanteId": "aju-5",
+      "data": "2026-09-09",
+      "tipo": "falta"
+    },
+    {
+      "id": "marc-90",
+      "ajudanteId": "aju-5",
+      "data": "2026-09-10",
+      "tipo": "falta"
+    },
+    {
+      "id": "marc-91",
+      "ajudanteId": "aju-5",
+      "data": "2026-09-11",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-92",
+      "ajudanteId": "aju-5",
+      "data": "2026-09-12",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-93",
+      "ajudanteId": "aju-5",
+      "data": "2026-09-13",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-94",
+      "ajudanteId": "aju-5",
+      "data": "2026-09-14",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-95",
+      "ajudanteId": "aju-5",
+      "data": "2026-09-15",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-96",
+      "ajudanteId": "aju-5",
+      "data": "2026-09-16",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-97",
+      "ajudanteId": "aju-5",
+      "data": "2026-09-17",
+      "tipo": "meia"
+    },
+    {
+      "id": "marc-98",
+      "ajudanteId": "aju-5",
+      "data": "2026-09-18",
+      "tipo": "falta"
+    },
+    {
+      "id": "marc-99",
+      "ajudanteId": "aju-5",
+      "data": "2026-09-19",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-100",
+      "ajudanteId": "aju-5",
+      "data": "2026-09-20",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-101",
+      "ajudanteId": "aju-6",
+      "data": "2026-09-01",
+      "tipo": "meia"
+    },
+    {
+      "id": "marc-102",
+      "ajudanteId": "aju-6",
+      "data": "2026-09-02",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-103",
+      "ajudanteId": "aju-6",
+      "data": "2026-09-03",
+      "tipo": "falta"
+    },
+    {
+      "id": "marc-104",
+      "ajudanteId": "aju-6",
+      "data": "2026-09-04",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-105",
+      "ajudanteId": "aju-6",
+      "data": "2026-09-05",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-106",
+      "ajudanteId": "aju-6",
+      "data": "2026-09-06",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-107",
+      "ajudanteId": "aju-6",
+      "data": "2026-09-07",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-108",
+      "ajudanteId": "aju-6",
+      "data": "2026-09-08",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-109",
+      "ajudanteId": "aju-6",
+      "data": "2026-09-09",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-110",
+      "ajudanteId": "aju-6",
+      "data": "2026-09-10",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-111",
+      "ajudanteId": "aju-6",
+      "data": "2026-09-11",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-112",
+      "ajudanteId": "aju-6",
+      "data": "2026-09-12",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-113",
+      "ajudanteId": "aju-6",
+      "data": "2026-09-13",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-114",
+      "ajudanteId": "aju-6",
+      "data": "2026-09-14",
+      "tipo": "falta"
+    },
+    {
+      "id": "marc-115",
+      "ajudanteId": "aju-6",
+      "data": "2026-09-15",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-116",
+      "ajudanteId": "aju-6",
+      "data": "2026-09-16",
+      "tipo": "meia"
+    },
+    {
+      "id": "marc-117",
+      "ajudanteId": "aju-6",
+      "data": "2026-09-17",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-118",
+      "ajudanteId": "aju-6",
+      "data": "2026-09-18",
+      "tipo": "inteira"
+    },
+    {
+      "id": "marc-119",
+      "ajudanteId": "aju-6",
+      "data": "2026-09-19",
+      "tipo": "meia"
+    },
+    {
+      "id": "marc-120",
+      "ajudanteId": "aju-6",
+      "data": "2026-09-20",
+      "tipo": "inteira"
+    }
+  ],
+  "vales": [
+    {
+      "id": "vale-1",
+      "ajudanteId": "aju-1",
+      "data": "2026-09-15",
+      "valor": 145.29,
+      "observacao": "Vale combustível/alimentação"
+    },
+    {
+      "id": "vale-2",
+      "ajudanteId": "aju-2",
+      "data": "2026-09-19",
+      "valor": 81.35,
+      "observacao": "Vale combustível/alimentação"
+    },
+    {
+      "id": "vale-3",
+      "ajudanteId": "aju-2",
+      "data": "2026-09-13",
+      "valor": 123.39,
+      "observacao": "Adiantamento"
+    },
+    {
+      "id": "vale-4",
+      "ajudanteId": "aju-3",
+      "data": "2026-09-01",
+      "valor": 155.83,
+      "observacao": "Vale combustível/alimentação"
+    },
+    {
+      "id": "vale-5",
+      "ajudanteId": "aju-4",
+      "data": "2026-09-06",
+      "valor": 91.32,
+      "observacao": "Vale combustível/alimentação"
+    },
+    {
+      "id": "vale-6",
+      "ajudanteId": "aju-4",
+      "data": "2026-09-07",
+      "valor": 54.37,
+      "observacao": "Adiantamento"
+    },
+    {
+      "id": "vale-7",
+      "ajudanteId": "aju-5",
+      "data": "2026-09-20",
+      "valor": 135.85,
+      "observacao": "Vale combustível/alimentação"
+    },
+    {
+      "id": "vale-8",
+      "ajudanteId": "aju-6",
+      "data": "2026-09-04",
+      "valor": 75.63,
+      "observacao": "Vale combustível/alimentação"
+    },
+    {
+      "id": "vale-9",
+      "ajudanteId": "aju-6",
+      "data": "2026-09-12",
+      "valor": 93.88,
+      "observacao": "Adiantamento"
+    }
+  ]
+}
