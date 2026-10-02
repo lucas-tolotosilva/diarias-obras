@@ -1,0 +1,475 @@
+:root {
+  --cor-primaria: #2f5f8a;
+  --cor-primaria-escura: #1c4360;
+  --cor-fundo: #f5f7fa;
+  --cor-texto: #16202a;
+  --cor-texto-suave: #52606d;
+  --cor-borda: #d7dee6;
+  --cor-inteira: #1e8e3e;
+  --cor-meia: #c77f00;
+  --cor-falta: #c62828;
+  --cor-whatsapp: #1fa855;
+  --radius: 12px;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  font-size: 17px;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5.5rem;
+}
+
+.topbar {
+  background: white;
+  border-bottom: 1px solid var(--cor-borda);
+  padding: 0.9rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.topbar-titulo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+.topbar-icone {
+  font-size: 1.5rem;
+}
+
+.seletor-obra {
+  padding: 0.55rem 0.8rem;
+  border-radius: var(--radius);
+  border: 2px solid var(--cor-borda);
+  font-size: 1rem;
+  font-weight: 600;
+  max-width: 100%;
+}
+
+.banner-demo {
+  background: #fff3cd;
+  border-bottom: 1px solid #e8c468;
+  padding: 0.6rem 1.25rem;
+  font-size: 0.88rem;
+  text-align: center;
+}
+
+.conteudo {
+  flex: 1;
+  padding: 1.25rem;
+  max-width: 820px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.pagina h1 {
+  margin-top: 0;
+  margin-bottom: 1.1rem;
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+
+.subtitulo-secao {
+  font-size: 1.15rem;
+  margin: 1.75rem 0 0.75rem;
+}
+
+.estado-vazio {
+  color: var(--cor-texto-suave);
+  background: white;
+  border: 1px dashed var(--cor-borda);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+/* Navegação inferior (mobile-first) */
+.nav-inferior {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  border-top: 1px solid var(--cor-borda);
+  display: flex;
+  justify-content: space-around;
+  padding: 0.4rem 0 calc(0.4rem + env(safe-area-inset-bottom));
+  z-index: 10;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15rem;
+  text-decoration: none;
+  color: var(--cor-texto-suave);
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.35rem 0.6rem;
+  border-radius: var(--radius);
+  min-width: 72px;
+}
+
+.nav-item-icone {
+  font-size: 1.5rem;
+}
+
+.nav-item.ativo {
+  color: var(--cor-primaria);
+  background: #e8f0f7;
+}
+
+/* Marcação diária */
+.seletor-data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.botao-data {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 2px solid var(--cor-primaria);
+  background: white;
+  color: var(--cor-primaria);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.data-atual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.data-atual input[type='date'] {
+  font-size: 1rem;
+  padding: 0.3rem;
+  border-radius: 8px;
+  border: 2px solid var(--cor-borda);
+}
+
+.lista-marcacao {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.card-marcacao {
+  background: white;
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--radius);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.card-marcacao-nome {
+  font-weight: 800;
+  font-size: 1.1rem;
+}
+
+.botoes-marcacao {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.6rem;
+}
+
+.botao-marcacao {
+  padding: 1rem 0.5rem;
+  border-radius: var(--radius);
+  border: 3px solid var(--cor-borda);
+  background: white;
+  font-weight: 800;
+  font-size: 1.05rem;
+  cursor: pointer;
+  color: var(--cor-texto);
+}
+
+.botao-inteira.selecionado {
+  background: var(--cor-inteira);
+  border-color: var(--cor-inteira);
+  color: white;
+}
+
+.botao-meia.selecionado {
+  background: var(--cor-meia);
+  border-color: var(--cor-meia);
+  color: white;
+}
+
+.botao-falta.selecionado {
+  background: var(--cor-falta);
+  border-color: var(--cor-falta);
+  color: white;
+}
+
+/* Formulários */
+.formulario {
+  background: white;
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.formulario-linha {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  align-items: end;
+}
+
+.formulario label,
+.campo-isolado {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--cor-texto-suave);
+}
+
+.campo-isolado {
+  margin-bottom: 1rem;
+}
+
+.formulario input,
+.formulario select,
+.campo-isolado select {
+  padding: 0.75rem 0.8rem;
+  border-radius: 10px;
+  border: 2px solid var(--cor-borda);
+  font-size: 1.05rem;
+  color: var(--cor-texto);
+}
+
+.botao {
+  border: none;
+  border-radius: var(--radius);
+  padding: 0.75rem 1.2rem;
+  font-weight: 800;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.botao-grande {
+  padding: 1.1rem 1.2rem;
+  font-size: 1.1rem;
+  width: 100%;
+}
+
+.botao-primario {
+  background: var(--cor-primaria);
+  color: white;
+}
+
+.botao-secundario {
+  background: white;
+  color: var(--cor-primaria);
+  border: 2px solid var(--cor-primaria);
+}
+
+.botao-whatsapp {
+  background: var(--cor-whatsapp);
+  color: white;
+}
+
+.botao:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.alerta {
+  padding: 0.8rem 1rem;
+  border-radius: var(--radius);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.alerta-sucesso {
+  background: #d9f2d9;
+  color: #1e6b1e;
+}
+
+/* Vales */
+.lista-vales {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.card-vale {
+  background: white;
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--radius);
+  padding: 0.9rem 1.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-vale-detalhe {
+  color: var(--cor-texto-suave);
+  font-size: 0.85rem;
+}
+
+.card-vale-valor {
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: var(--cor-falta);
+}
+
+/* Cadastros */
+.abas {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.abas button {
+  flex: 1;
+  padding: 0.7rem;
+  border-radius: var(--radius);
+  border: 2px solid var(--cor-borda);
+  background: white;
+  font-weight: 800;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.abas button.ativo {
+  background: var(--cor-primaria);
+  border-color: var(--cor-primaria);
+  color: white;
+}
+
+.lista-cadastro {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.card-cadastro {
+  background: white;
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--radius);
+  padding: 0.9rem 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.card-cadastro-detalhe {
+  color: var(--cor-texto-suave);
+  font-size: 0.9rem;
+}
+
+/* Comprovante / Fechamento */
+.comprovante {
+  background: white;
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+}
+
+.comprovante h2 {
+  margin-top: 0;
+}
+
+.comprovante-periodo {
+  color: var(--cor-texto-suave);
+  margin-top: -0.5rem;
+}
+
+.comprovante-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 0.75rem;
+  margin: 1.25rem 0;
+}
+
+.comprovante-item {
+  background: var(--cor-fundo);
+  border-radius: 10px;
+  padding: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.comprovante-item span {
+  font-size: 0.82rem;
+  color: var(--cor-texto-suave);
+  font-weight: 700;
+}
+
+.comprovante-item strong {
+  font-size: 1.3rem;
+}
+
+.comprovante-item small {
+  color: var(--cor-texto-suave);
+}
+
+.comprovante-destaque {
+  background: #e8f0f7;
+  border: 2px solid var(--cor-primaria);
+}
+
+.comprovante-destaque strong {
+  color: var(--cor-primaria-escura);
+}
+
+.comprovante-vales ul {
+  padding-left: 1.2rem;
+}
+
+.comprovante-texto {
+  white-space: pre-wrap;
+  background: var(--cor-fundo);
+  border-radius: 10px;
+  padding: 1rem;
+  font-family: ui-monospace, monospace;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.comprovante-acoes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
