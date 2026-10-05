@@ -79,6 +79,15 @@ marcações e vales fictícios pré-carregados.
    o app passa a exigir login (Supabase Auth) e usa o banco real em vez do
    armazenamento local automaticamente.
 
+## Deploy (demo ao vivo)
+
+[Vercel](https://vercel.com), free tier — como é 100% estático e já tem modo
+demonstração embutido (sem backend obrigatório), o deploy é só conectar o repo.
+O `vercel.json` cuida do rewrite de rotas do React Router. Para rodar contra o
+Supabase real em produção em vez do modo demonstração, defina
+`VITE_SUPABASE_URL` e `VITE_SUPABASE_ANON_KEY` nas variáveis de ambiente do
+projeto na Vercel.
+
 ## Estrutura do projeto
 
 ```
