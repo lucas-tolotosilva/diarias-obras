@@ -29,8 +29,10 @@ ou baixar em PDF.
 - **Alto contraste e fontes grandes**, pensado para uso ao ar livre, com poucos
   toques por ação.
 - **Modo demonstração**: funciona 100% localmente (dados salvos no navegador),
-  sem precisar configurar nada. Pronto para produção com **Supabase**
-  (autenticação + banco Postgres) quando as credenciais forem configuradas.
+  sem precisar configurar nada — nenhum login é exigido nesse modo. Pronto para
+  produção com **Supabase** (autenticação real por e-mail/senha + banco
+  Postgres) quando as credenciais forem configuradas: nesse caso o app passa a
+  exigir login antes de liberar o acesso.
 
 ## Stack
 
@@ -70,8 +72,12 @@ marcações e vales fictícios pré-carregados.
    VITE_SUPABASE_URL=https://seu-projeto.supabase.co
    VITE_SUPABASE_ANON_KEY=sua-chave-anon
    ```
-3. Suba o app normalmente (`npm run dev`); com essas variáveis definidas, o
-   app passa a usar o Supabase em vez do armazenamento local automaticamente.
+3. Crie o usuário do encarregado em **Authentication → Users → Add user** no
+   painel do Supabase (e-mail + senha). Não há autocadastro pelo app — o login
+   é restrito a usuários criados manualmente.
+4. Suba o app normalmente (`npm run dev`); com as variáveis de `.env` definidas,
+   o app passa a exigir login (Supabase Auth) e usa o banco real em vez do
+   armazenamento local automaticamente.
 
 ## Estrutura do projeto
 
@@ -85,9 +91,13 @@ diarias-obras/
 │   │   ├── repositorioFactory.ts   # Escolhe a implementação automaticamente
 │   │   ├── seedData.ts             # Dataset fictício (gerado por scripts/)
 │   │   ├── fechamento.ts           # Cálculo de fechamento (puro, testável)
-│   │   └── comprovante.ts          # Texto do comprovante, link WhatsApp e PDF
-│   ├── pages/                      # Marcação, Vales, Fechamento, Cadastros
-│   └── components/Layout.tsx       # Navegação inferior + seletor de obra
+│   │   ├── comprovante.ts          # Texto do comprovante, link WhatsApp e PDF
+│   │   ├── AuthContext.tsx         # Sessão Supabase Auth (login/logout)
+│   │   └── ObraContext.tsx         # Obra selecionada no momento
+│   ├── pages/                      # Login, Marcação, Vales, Fechamento, Cadastros
+│   └── components/
+│       ├── Layout.tsx              # Navegação inferior + seletor de obra + sair
+│       └── AuthGate.tsx            # Bloqueia o app sem sessão válida (pulado no modo demo)
 ├── scripts/
 │   ├── gerar_dados_demo.mjs        # Gera samples/dados_demo.json e src/lib/seedData.ts
 │   └── gerar_screenshots.py        # Automação Playwright para /screenshots
